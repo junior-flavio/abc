@@ -1,0 +1,23 @@
+//questao1-2
+//Flavio Vinicius- E.F.- Matutino
+//Questão 1 e 2 da lista pediu que fosse feito um código que lesse notas de até 50 alunos.
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {	
+
+	int aluno[50];
+	int qaluno;
+
+	do
+	{
+		printf("Informe a quantidade de alunos : ");
+	  scanf("%d", &qaluno);
+	}while((qaluno > 50)||(qaluno < 0));
+		
+	for(int i=0; i<qaluno; i++){
+		printf("Digite sua nota : \n");
+		scanf("%d", &aluno);
+	}	
+	return 0;
+}
